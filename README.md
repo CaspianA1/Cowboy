@@ -1,2 +1,2 @@
 # Cowboy
-A programming language that maps directly to Python syntax. 
+A programming language from the wild, wild West.
