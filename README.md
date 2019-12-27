@@ -50,3 +50,6 @@
     "IS OUTRIGHT BETTER THAN A": ">",
     "TAKE HER AWAY": "-=",
     "DON'T TAKE HER AWAY": "+="
+
+#### To run a file, use this guide:
+    python3 cbc.py [SPECIFIED FILE, IN COWBOY DIRECTORY]
