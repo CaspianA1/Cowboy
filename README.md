@@ -1,9 +1,10 @@
 # Cowboy
-<h3>A programming language from the wild, wild West.</h1>
 
-<h3>Inspired by the Cowbot dictionary: https://www.legendsofamerica.com/we-slang/</h2>
+#### A programming language from the wild, wild West.</h1>
 
-### Knowing Python explains the syntax. Here is a simple guide:
+#### Inspired by the Cowbot dictionary: https://www.legendsofamerica.com/we-slang/
+
+#### Knowing Python explains the syntax. Here is a simple guide:
 
     "MY GUN DOES THE TALKING": "try",
     "TOUGH AS NAILS": "except",
