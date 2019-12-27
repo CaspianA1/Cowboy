@@ -53,3 +53,7 @@
 
 #### To run a file, use this guide:
     python3 cbc.py [SPECIFIED FILE, IN COWBOY DIRECTORY]
+   
+   
+#### If you want to try this out without downloading the code, you can modify the test.cboy file here:
+    https://repl.it/repls/ProductiveNavyblueAcrobat
