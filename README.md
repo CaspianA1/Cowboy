@@ -1,6 +1,6 @@
 # Cowboy
 
-#### A programming language from the wild, wild West.</h1>
+#### This is an interpreter for Cowboym, a programming language from the wild, wild West. </h1>
 
 #### Inspired by the Cowbot dictionary: https://www.legendsofamerica.com/we-slang/
 
