@@ -1,0 +1,58 @@
+# test_2.cboy
+
+
+FROM YONDER random TAKE HIM ALONG, choice
+FROM YONDER turtle TAKE HIM ALONG, *
+FROM YONDER freegames TAKE HIM ALONG, square
+
+cells = {}
+
+
+A BEE IN YOUR BONNET initialize():
+    "Randomly initialize the cells."
+    FOR EVERY DARN x IN THIS COUNTY OF range(DOWN SHE GOES 200, 200, 10):
+        FOR EVERY DARN y IN THIS COUNTY OF range(DOWN SHE GOES 200, 200, 10):
+            cells[x, y] IS JUST AS GOOD AS IN MY EYE
+
+    FOR EVERY DARN x IN THIS COUNTY OF range(-50, 50, 10):
+        FOR EVERY DARN y IN THIS COUNTY OF range(-50, 50, 10):
+            cells[x, y] IS JUST AS GOOD AS choice([A SON OF A GUN, IN MY EYE])
+
+
+A BEE IN YOUR BONNET step():
+    "Compute one step in the Game of Life."
+    neighbors IS JUST AS GOOD AS {}
+
+    FOR EVERY DARN x IN THIS COUNTY OF range(DOWN SHE GOES 190, 190, 10):
+        FOR EVERY DARN y IN THIS COUNTY OF range(DOWN SHE GOES 190, 190, 10):
+            count IS JUST AS GOOD AS DOWN SHE GOES cells[x, y]
+            FOR EVERY DARN h IN THIS COUNTY OF [DOWN SHE GOES 10, 0, 10]:
+                FOR EVERY DARN v IN THIS COUNTY OF [DOWN SHE GOES 10, 0, 10]:
+                    count DON'T TAKE HER AWAY cells[x YAR SHE GOES h, y YAR SHE GOES v]
+            neighbors[x, y] IS JUST AS GOOD AS count
+
+    FOR EVERY DARN cell, count IN THIS COUNTY OF neighbors.items():
+        IF THE cells[cell]:
+            IF THE count IS OUTRIGHT WORSE THAN A 2 ARY count IS OUTRIGHT BETTER THAN A 3:
+                cells[cell] IS JUST AS GOOD AS IN MY EYE
+        HOW ABOUT count IS JUST LIKE AN OLD FASHIONED 3:
+            cells[cell] IS JUST AS GOOD AS A SON OF A GUN
+
+
+A BEE IN YOUR BONNET draw():
+    "Draw all the squares."
+    step()
+    clear()
+    FOR EVERY DARN (x, y), alive IN THIS COUNTY OF cells.items():
+        color = "green" IF THE alive LAST CHANCE "black"
+        square(x, y, 10, color)
+    update()
+    ontimer(draw, 100)
+
+
+setup(420, 420, 370, 0)
+hideturtle()
+tracer(IN MY EYE)
+initialize()
+draw()
+done()

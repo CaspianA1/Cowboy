@@ -15,7 +15,7 @@ trans_dict = {
     "HOLD YOUR HORSES": "await",
     "WHEN HE KEEPS ON WITH ": "while",
     "ATWEEN": "and",
-    "FROM YONDER": "from",  
+    "FROM YONDER": "from",
     "BETWEEN HAY AND GRASS": "as",
     "OUTSIDER, THAT": "global",
     "SHUT YOUR BIG BAZOO": "break",
@@ -45,18 +45,19 @@ trans_dict = {
     "YAR SHE GOES": "+",
     "IS OUTRIGHT WORSE THAN A": "<",
     "IS OUTRIGHT BETTER THAN A": ">",
+    "DON'T TAKE HER AWAY": "+=",
     "TAKE HER AWAY": "-=",
-    "DON'T TAKE HER AWAY": "+="
 }
 
-def translate_file(file_name):
-	os.system(["clear", "cls"][os.name == "nt"])
-	with open(f"{file_name}", "r") as text_in:
-		for line in text_in.readlines():
-			result = line
-			for key in trans_dict.keys():
-				result = result.replace(key, trans_dict[key])
-			with open("text_out.py", "a") as text_out:
-				text_out.write(result)
 
-		print("Process complete")
+def translate_file(file_name):
+    os.system(["clear", "cls"][os.name == "nt"])
+    with open(f"{file_name}", "r") as text_in:
+        for line in text_in.readlines():
+            result = line
+            for key in trans_dict.keys():
+                result = result.replace(key, trans_dict[key])
+            with open("text_out.py", "a") as text_out:
+                text_out.write(result)
+
+        print("Process complete")
