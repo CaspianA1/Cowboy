@@ -2,7 +2,9 @@
 
 #### This is an interpreter for Cowboy, a programming language from the wild, wild West. </h1>
 
-#### Inspired by the Cowbot dictionary: https://www.legendsofamerica.com/we-slang/
+### Really though, it's a flavor of Python with an unique twist.
+
+#### Inspired by the Cowboy dictionary: https://www.legendsofamerica.com/we-slang/
 
 #### Knowing Python explains the syntax. Here is a simple guide:
 
